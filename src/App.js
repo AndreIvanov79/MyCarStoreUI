@@ -1,16 +1,21 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-import WelcomePage from "./component/welcome-page-component/welcome-page";
-import Navigation from "./component/navigation-component/navigation";
+import Users from "./component/users-component/users";
+import Main from "./component/main-component/main";
+import Cars from "./component/cars-component/cars";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navigation/>
-        <WelcomePage/>
-      </header>
-    </div>
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<Main />}/>
+              <Route path="/users" element={<Users />} />
+              <Route path="/cars" element={<Cars />} />
+              {/*<Route path="rents" element={<Rents />} />*/}
+          </Routes>
+      </BrowserRouter>
   );
 }
 

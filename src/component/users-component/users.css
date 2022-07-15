@@ -1,0 +1,57 @@
+.Box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.Body {
+    /*min-height: 50vh;*/
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 150vh;
+    border-color: #32a1ce;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    border: 2px solid;
+    height: 10vh;
+}
+
+td {
+    border: 2px solid;
+    height: 5vh;
+}
+
+.Butt {
+    border-style: none;
+    display: flex;
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    width: 4vh;
+}
+
+button {
+    margin-left: 5px;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+}
+
+.Edit {
+    background-color: greenyellow;
+}
+
+.Del {
+    background-color: red;
+}
