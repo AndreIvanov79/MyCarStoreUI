@@ -1,4 +1,4 @@
-.Box {
+.Box         {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -50,6 +50,8 @@ button {
 
 .Edit {
     background-color: greenyellow;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
 }
 
 .Del {

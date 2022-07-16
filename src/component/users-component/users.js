@@ -19,10 +19,10 @@ const Users =() => {
                 <tr>
                     <td>John</td>
                     <td>jonny@mail.com</td>
-                    <td>N 1</td>
+                    <td>Rent 1, Rent 2</td>
                     <td className="Butt">
-                        <button className="Edit">Edit</button>
-                        <button className="Del">Delete</button>
+                        <button className="Edit" onClick={()=>window.open("http://google.com")}>Edit</button>
+                        <button className="Del" onClick={()=>window.open("http://google.com")}>Delete</button>
                     </td>
                 </tr>
 
