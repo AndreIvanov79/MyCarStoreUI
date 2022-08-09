@@ -10,29 +10,6 @@ header {
     height: 15vh;
 }
 
-.Body {
-    /*min-height: 50vh;*/
-    display: flex;
-    justify-content: center;
-}
-
-table {
-    width: 150vh;
-    border-color: #32a1ce;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th {
-    border: 2px solid;
-    height: 10vh;
-}
-
-td {
-    border: 2px solid;
-    height: 5vh;
-}
-
 .Butt {
     border-style: none;
     display: flex;
@@ -56,4 +33,15 @@ button {
 
 .Del {
     background-color: red;
+}
+
+.editable-row .ant-form-item-explain {
+    position: absolute;
+    top: 100%;
+    font-size: 12px;
+}
+
+.Table-wrapper {
+    display: flex;
+    justify-content: center;
 }

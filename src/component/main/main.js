@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../navigation-component/navigation";
-import WelcomePage from "../welcome-page-component/welcome-page";
+import Navigation from "../navigation/navigation";
+import WelcomePage from "../welcome-page/welcome-page";
 
 
 export default function Main(){
