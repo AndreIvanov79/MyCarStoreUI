@@ -1,6 +1,7 @@
 import { Button, Form, Input, Popconfirm, Table } from 'antd';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import axios from "axios";
+import GetReq from "../request/getReq";
 
 const EditableContext = React.createContext(null);
 const EditableRow = ({ index, ...props }) => {
@@ -85,7 +86,7 @@ const MyTable = (props) => {
     const [count, setCount] = useState();
 
     useEffect(() => {
-        axios.get(props.url,{headers: {'X-Requested-With': 'XMLHttpRequest'}}).then((resp ) => {
+        GetReq(props.url).then((resp ) => {
             const allUsers = resp.data;
             const newData = [...allUsers];
             setDataSource(newData);
@@ -93,7 +94,6 @@ const MyTable = (props) => {
         });
     }, [setDataSource]);
     console.log("!!!: ",dataSource);
-
 
     const handleDelete = (key) => {
         const newData = dataSource.filter((item) => item.key !== key);
