@@ -115,7 +115,6 @@ const MyTable = (props) => {
         },
     ];
 
-
     const colNames = cols.map((col)=>col.dataIndex);
     const handleAdd = () => {
         const newData = {key: count,};
